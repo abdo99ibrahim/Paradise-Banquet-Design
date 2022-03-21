@@ -1,0 +1,30 @@
+.rules{
+    margin: 30px 25px 60px;
+}
+@media screen and (min-width: 992px){
+    .rules > *{
+        grid-column: 1 / -1; 
+    }
+}
+.rules .typography__CopyStyle{
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 300;
+    font-size: 15.5px;
+    line-height: 1.625;
+    font-family: "Sofia Pro", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    letter-spacing: 0.04em;
+    color: rgb(51, 51, 51);
+    margin-bottom: 5px;
+}
+.rules h2{
+    font-style: italic;
+    font-variant: normal;
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 1.25;
+    font-family: "Saol Text", "Times New Roman", Times, serif;
+    letter-spacing: 0.04em;
+    color: rgb(51, 51, 51);
+    margin-bottom: 10px;
+}
