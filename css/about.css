@@ -129,4 +129,8 @@
         width: 100%;
         justify-content: flex-start;
     }
+    .row{
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
 }
