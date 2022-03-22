@@ -1,0 +1,11 @@
+.image-and-copy-section__TextContent .typography__PriceStyle{
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 300;
+    font-size: 35px;
+    line-height: 1.25;
+    font-family: "Sofia Pro", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    letter-spacing: 0.01em;
+    color: rgb(51, 51, 51);
+    margin-bottom: 20px;
+}

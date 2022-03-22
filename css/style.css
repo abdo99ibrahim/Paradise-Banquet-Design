@@ -10,6 +10,10 @@ html{
 a{
     text-decoration: none;
 }
+@font-face {
+font-family: "Sofia Pro";
+src: url("../fonts/sofiapro-light.otf");
+}
 ul {
     list-style: none;
     margin: 0;

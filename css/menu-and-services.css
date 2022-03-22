@@ -74,6 +74,13 @@
         color: rgb(51, 51, 51);
         margin-bottom: 10px;
         font-size: 39px;
+        width: 108% !important;
+    }
+    @media (max-width:767px) {
+        .image-and-copy-section__TextContent h1{
+            font-size: 30px;
+            line-height: 40px;
+        }
     }
     .image-and-copy-section__TextContent p{
         font-style: normal;
