@@ -1,0 +1,117 @@
+.form__ContactUsForm{
+    display: grid;
+    width: -webkit-fill-available;
+    box-sizing: border-box;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+@media screen and (min-width: 768px){
+    .form__ContactUsForm{
+        padding-left: 32px;
+        padding-right: 30px;
+        grid-column: 1 / -1;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "h2 h2" "name email" "phone size" "method ." "dates questions" "dates questions" "button .";
+        gap: 45px 30px;
+    }
+}
+.typography__MenuSubheadingStyle{
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 1.375;
+    font-family: "Saol Text", "Times New Roman", Times, serif;
+    letter-spacing: 0.01em;
+    color: rgb(51, 51, 51);
+    margin-top: 30px;
+    outline: none;
+    margin-bottom: -15px;
+    grid-area: h2 / h2 / h2 / h2; 
+}
+.form__ContactUsForm .typography__CopyStyle{
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 300;
+    font-size: 15.5px;
+    line-height: 1.625;
+    font-family: "Sofia Pro", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    letter-spacing: 0.04em;
+    color: rgb(51, 51, 51);
+    outline: none;
+    margin-bottom: 5px;
+}
+.form__ContactUsForm input{
+    width: 100%;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-image: initial;
+    border-bottom: 1px solid rgb(179, 179, 179);
+    transition: border 300ms ease-in-out 0s;
+    outline: none;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 300;
+    font-size: 15.5px;
+    line-height: 1.625;
+    font-family: "Sofia Pro", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    letter-spacing: 0.04em;
+}
+.form__PreferredMethodOfContact{
+    outline: none;
+    display: grid;
+    grid-template-columns: 44px 1fr 44px 1fr;
+    -webkit-box-align: center;
+    align-items: center;
+    row-gap: 10px;
+    grid-area: method / method / method / method;
+}
+.form__PreferredMethodOfContact > input{
+    grid-area: 2 / auto / auto / auto;
+    min-height: 16px;
+}
+/* .form__PreferredMethodOfContact > label{ 
+    font-family: Sofia Pro,Gill Sans,Gill Sans MT,Calibri,Trebuchet MS,sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: .04rem;
+    line-height: 1.625;
+    outline: none;
+    grid-area: 1 / 1 / auto / -1;
+    color: red !important;
+} */
+.form__GroupSize{
+    font-family: Sofia Pro,Gill Sans,Gill Sans MT,Calibri,Trebuchet MS,sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: .04rem;
+    line-height: 1.625;
+    display: flex;
+    flex-direction: column;
+    grid-area: size / size / size / size;
+}
+.form__InterestedDates{
+    font-family: Sofia Pro,Gill Sans,Gill Sans MT,Calibri,Trebuchet MS,sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: .04rem;
+    line-height: 1.625;
+    color: rgb(51, 51, 51);
+    grid-area: dates / dates / dates / dates;
+    height: 100%;
+}
+.form__ContactUsForm > label > input, .form__ContactUsForm > label > textarea {
+    padding-left: 32px;
+    padding-right: 30px;
+    grid-column: 1 / -1;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+        "h2 h2"
+        "name email"
+        "phone size"
+        "method ."
+        "dates questions"
+        "dates questions"
+        "button .";
+}

@@ -166,6 +166,18 @@ section .content h1 {
     grid-column: 1 / -1;
     margin-top: 30px;
 }
+.MenuContainer .MenuSubheadingStyle{
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 1.375;
+    font-family: "Saol Text", "Times New Roman", Times, serif;
+    letter-spacing: 0.01em;
+    color: rgb(51, 51, 51);
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
 .MenuContainer  .MenuThirdHeadingStyle{
     font-weight: 300;
     font-size: 16px;

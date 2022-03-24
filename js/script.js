@@ -24,3 +24,4 @@ a.onclick = function(){
     });
 
 };
+new WOW().init();

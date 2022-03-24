@@ -12,7 +12,15 @@ a{
 }
 @font-face {
 font-family: "Sofia Pro";
-src: url("../fonts/sofiapro-light.otf");
+src: url("../fonts/sofiapro.woff2");
+}
+@font-face {
+font-family: "Saol Display";
+src: url("../fonts/SaolDisplay.woff2");
+}
+@font-face {
+font-family: "Saol Text";
+src: url("../fonts/SaolText-Regular.woff2");
 }
 ul {
     list-style: none;
@@ -80,8 +88,16 @@ ul {
     right: 0;
   }
   section .content h1{
-    font-family:'Times New Roman', Times, serif;
-    font-size: 50px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 1.125;
+    font-family: "Saol Display", "Times New Roman", Times, serif;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: rgb(51, 51, 51);
+    margin-bottom: 10px;
+    font-size: 42px;
   }
   @media (max-width:767px) {
     section .content h1{
@@ -134,11 +150,6 @@ ul {
 }
 .footer .footerLinks a{
   margin-right: 20px;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  vertical-align: baseline;
   font-style: italic;
   font-variant: normal;
   font-weight: 400;
@@ -146,10 +157,10 @@ ul {
   font-family: "Saol Text", "Times New Roman", Times, serif;
   letter-spacing: 0.04em;
   padding-bottom: 2px;
-  border-bottom: 1px solid currentcolor;
+  border-bottom: 1.2px solid currentcolor;
   transition: opacity 300ms ease-in-out 0s;
   color: white;
-  margin-right: 30px;
+  margin-right: 12px;
   font-size: medium;
 }
 .footer .copyright-text{
@@ -157,7 +168,7 @@ ul {
   font-family: "Saol Text", "Times New Roman", Times, serif;
     letter-spacing: 0.1em;
 }
-.footer .container .toUp{
+/* .footer .container .toUp{
   position: absolute;
   top: 15%;
   right: 7%;
@@ -172,7 +183,7 @@ ul {
   .footer .container .toUp{
   right: 3%;
   }
-}
+} */
 .footer .mobile{
   display: none;
 }

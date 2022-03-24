@@ -1,0 +1,116 @@
+.videoSection{
+    opacity: 1;
+    transform: translateY(0px);
+    transition-property: opacity, transform;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 200ms;
+    margin: 120px auto;
+}
+.videoSection video{
+    letter-spacing: .05rem;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    width: 100%;
+}
+.videoSection h3{
+
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.25;
+    font-family: "Sofia Pro", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: rgb(51, 51, 51);
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+@media screen and (min-width: 1200px){
+    .videoSection video,
+    .videoSection h3{
+        width: 1080px;
+        display: flex !important;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0px auto;
+    }
+}
+@media screen and (max-width: 768px){
+    .videoSection video,
+    .videoSection h3{
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .videoSection h3{
+        text-align: center;
+    }
+    .row{
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+}
+/*QuoteSection*/
+.quote__QuoteSection{
+grid-column: 1 / -1;
+display: flex;
+flex-direction: column;
+-webkit-box-align: center;
+align-items: center;
+text-align: center;
+opacity: 1;
+transform: translateY(0px);
+transition-property: opacity, transform;
+transition-duration: 500ms;
+transition-timing-function: ease-in-out;
+transition-delay: 200ms;
+padding: 0px 20px;
+border-width: 1px;
+border-style: solid;
+border-color: rgb(51, 51, 51);
+border-image: initial;
+margin: 120px 30px 60px;
+}
+@media screen and (min-width: 992px){
+    .quote__QuoteSection{
+        margin-top: 90px;
+        margin-bottom: 150px;
+        margin:120px auto;  
+        width: 45% !important;      
+    }
+}
+@media screen and (min-width: 768px){
+    .quote__QuoteSection{
+    width: 50ch;
+    justify-self: center;
+    }
+}
+.quote__QuoteSection svg{
+    text-align: center;
+    width: 44;
+    height: 44;
+    display: inline-block;
+    padding: 0px 10px;
+    background: white;
+    transform: translateY(-50%);
+}
+.quote__QuoteSection svg path{
+    opacity: 0.25;
+    }
+.quote__QuoteSection .typography__MenuSubheadingStyle{
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 1.375;
+    font-family: "Saol Text", "Times New Roman", Times, serif;
+    letter-spacing: 0.01em;
+    color: rgb(51, 51, 51);
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+.quote__QuoteSection svg:last-child{
+    transform: translateY(50%);
+}
