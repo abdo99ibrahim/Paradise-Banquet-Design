@@ -7,6 +7,7 @@
     <title>Contact Us</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/contact-us.css" />
+    <link rel="stylesheet" href="css/animate.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -40,78 +41,137 @@
           </p>
         </div>
       </section>
-      <form
-        action="/thanks/"
-        class="form__ContactUsForm"
-        method="POST"
-        name="Contact"
-      >
-        <p hidden="">
-          <label
-            >Don’t fill this out:<!-- -->
-            <input name="bot-field"
-          /></label>
-        </p>
-        <h2 class="typography__MenuSubheadingStyle"><span>Contact Us</span></h2>
-        <label
-          ><p class="typography__CopyStyle"><span>Name</span></p>
-          <input type="text" name="name" required="" /></label
-        ><label
-          ><p class="typography__CopyStyle"><span>Email</span></p>
-          <input type="email" name="email" required="" /></label
-        ><label
-          ><p class="typography__CopyStyle"><span>Phone</span></p>
-          <input type="tel" name="phone" required=""
-        /></label>
-        <div class="form__PreferredMethodOfContact">
-          <label for="preferred-contact-method"
-            ><p class="typography__CopyStyle">
-              Preferred Method<!-- -->
-              <span>of Contact</span>
-            </p></label
-          ><input
-            type="radio"
-            id="email-preferred"
-            name="preferred-contact-method"
-            value="email-preferred"
-            required=""
-          /><label for="email-preferred"
-            ><p class="typography__CopyStyle"><span>Email</span></p></label
-          ><input
-            type="radio"
-            id="phone-preferred"
-            name="preferred-contact-method"
-            value="phone-preferred"
-            required=""
-          /><label for="phone-preferred"
-            ><p class="typography__CopyStyle"><span>Phone</span></p></label
-          >
+      <section class="row container m-md-5 wow fadeInUpBig" data-wow-duration="1.2s">
+        <section class="col-lg-6 col-md-6 col-12">
+          <div>
+            <div>
+              <h2 class="typography__MenuSubheadingStyle mb-3">Get <span>in Touch</span></h2>
+              <div class="row">
+                <div class="col-4 first">
+                  <p class="typography__CopyStyle">
+                    <img src="./assets/Logo/telephone-icon.svg" >
+                     <span class="m-2 ">Tel /</span>
+                  </p>
+                </div>
+                <div class="col-8 second">
+                  <a href="tel:+1-416-661-6612" target="_blank" rel="noopener noreferrer"><p class="typography__CopyStyle"> <span>416-661-6612</span></p></a>
+                </div>
+              </div>            
+              <div class="row">
+                <div class="col-4 first">
+                  <p class="typography__CopyStyle">
+                    <img src="./assets/Logo/toll-free-telephone-icon.svg" >
+                     <span class="m-2 ">Toll Free /</span>
+                  </p>
+                </div>
+                <div class="col-8 second">
+                  <a href="tel:+1-800-388-3064" target="_blank" rel="noopener noreferrer"><p class="typography__CopyStyle"> <span>1-800-388-3064</span></p></a>
+                </div>
+              </div>            
+              <div class="row">
+                <div class="col-4 first">
+                  <p class="typography__CopyStyle">
+                    <img src="./assets/Logo/fax-icon.svg" >
+                     <span class="m-2 ">Fax /</span>
+                  </p>
+                </div>
+                <div class="col-8 second">
+                  <p class="typography__CopyStyle"> <span>905-669-3880</span></p>
+                </div>
+              </div>            
+              <div class="row">
+                <div class="col-4 first">
+                  <p class="typography__CopyStyle">
+                    <img src="./assets/Logo//email-icon.svg" >
+                     <span class="m-2 ">Email /</span>
+                  </p>
+                </div>
+                <div class="col-8 second">
+                  <a href="mailto:info@paradisehalls.com" target="_blank" rel="noopener noreferrer"><p class="typography__CopyStyle-sc-2ogs2t-8 GTVcv"> <span>info@paradisehalls.com</span></p></a>
+                </div>
+              </div>
+            </div>            
+            
+            <div>
+              <h2 class="typography__MenuSubheadingStyle mb-3"> <span>Visit Us</span></h2>
+              <div class="row">
+                <div class="col-12 first">
+                  <p class="typography__CopyStyle pb-2">
+                     <span>7601 Jane Street</span>
+                  </p>                 
+                  <p class="typography__CopyStyle pb-2">
+                     <span>Vaughan ON L4K 1X2</span>
+                  </p>                  
+                  <p class="typography__CopyStyle">
+                     <span>(Free on-site parking available at the front and back of the venue)</span>
+                  </p>
+                </div>
+              </div>            
+            </div>            
+            <div>
+              <h2 class="typography__MenuSubheadingStyle mb-3"> <span>Hours</span></h2>
+              <div class="row">
+                <div class="col-12 first">
+                  <p class="typography__CopyStyle pb-2">
+                     <span>Weekdays	10:00 am – 8:00 pm</span>
+                  </p>                 
+                  <p class="typography__CopyStyle pb-2">
+                     <span>Weekends	10:00 am – 6:00 pm</span>
+                  </p>                  
+                </div>
+              </div>            
+            </div>
+          </div>
+        </section>       
+        <div class="col-lg-6 col-md-6 col-12 ">
+          <iframe class="map_contact"
+          src="https://maps.google.com/maps?width=100&amp;height=400&amp;hl=en&amp;q=معهد تكنولوجيا المعلومات - جامعة سوهاج ITI, Sohag, Egitto&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          style="border: 0" allowfullscreen></iframe>
+          </div>
+        </section> 
+      <form class="row g-3 p-2 p-md-3 mt-3 container wow fadeInUpBig" data-wow-duration="1.2s" action="./thanks.html" method="POST">
+        <div class="col-12">
+          <h2 class="typography__MenuSubheadingStyle"><span>Contact Us</span></h2>
         </div>
-        <div class="form__GroupSize">
-          <label for="group-size"
-            ><p class="typography__CopyStyle"><span>Group Size</span></p></label
-          ><input
-            type="number"
-            id="group-size"
-            name="group-size"
-            min="2"
-            max="2000"
-            step="1"
-            required=""
-          />
+        <div class="col-md-6">
+          <label for="inputName" class="form-label typography__CopyStyle">Name</label>
+          <input type="text" class="form-control" id="inputName" required="">
         </div>
-        <label class="form__InterestedDates"
-          ><p class="typography__CopyStyle"><span>Interested Dates</span></p>
-          <textarea name="interested-dates" required=""></textarea></label
-        ><label
-          ><p class="typography__CopyStyle">
-            Comments<!-- -->
-            <span>or Questions</span>
-          </p>
-          <textarea name="message" required=""></textarea></label
-        ><button type="submit">
-          <p class="typography__CopyStyle"><span>Send</span></p>
-        </button>
+        <div class="col-md-6">
+          <label for="inputEmail" class="form-label typography__CopyStyle">Email</label>
+          <input type="email" class="form-control" id="inputEmail" required="">
+        </div>        
+        <div class="col-md-6">
+          <label for="inputPhone" class="form-label typography__CopyStyle">Phone</label>
+          <input type="tel" class="form-control" id="inputPhone" required="">
+        </div>        
+        <div class="col-md-6">
+          <label for="inputSize" class="form-label typography__CopyStyle">Group Size</label>
+          <input type="number" class="form-control" id="inputSize" required="" min="2" max="2000" step="1">
+        </div>
+        <div class="col-12">
+          <label for="inputAddress" class="form-label typography__CopyStyle d-block">Preferred Method of Contact</label>
+          <div class="form-check form-check-inline p-4">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"required="" />
+            <label class="form-check-label" for="inlineRadio1">Email</label>
+          </div>
+          
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"required="" />
+            <label class="form-check-label" for="inlineRadio2">Phone</label>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label for="inputInterested" class="form-label typography__CopyStyle">Interested Dates</label>
+          <textarea class="form-control" name="interested-dates" id="inputInterested" required=""></textarea>
+        </div>        
+        <div class="col-md-6">
+          <label for="inputMessage" class="form-label typography__CopyStyle">Comments or Questions</label>
+          <textarea class="form-control" name="message" id="inputMessage" required=""></textarea>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn">Sign in</button>
+        </div>
       </form>
     </main>
     <footer class="footer">
@@ -181,6 +241,7 @@
           </div>
       </div>
   </footer>
+  <script src="./js/wow.min.js"></script>
     <script src="./js/script.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
