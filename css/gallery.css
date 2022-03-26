@@ -83,7 +83,9 @@ margin: 120px 30px 60px;
 }
 @media screen and (min-width: 768px){
     .quote__QuoteSection{
-    width: 50ch;
+    width: 60ch;
+    margin: 15px auto;
+    margin-bottom: 40px;
     justify-self: center;
     }
 }

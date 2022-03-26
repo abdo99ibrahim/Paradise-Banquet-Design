@@ -1,3 +1,7 @@
+@media (max-width: 767px){
+.venue-summary-grid__VenueSummaryGrid div:last-of-type {
+    padding-left: 15px;
+}}
 .image-and-copy-section__ImageAndCopySection{
     grid-column: 1 / -1;
     display: grid;
@@ -30,6 +34,24 @@
         max-height: 80vh;
         position: relative;
         overflow: hidden;
+    }
+    @media (max-width:767px) {
+        .image-and-copy-section__ImageAndCopySection .gatsby-image-wrapper
+        ,.img-fluid{
+        height: 110vh !important;
+        }
+    }
+    @media (min-width:768px) {
+        .image-and-copy-section__ImageAndCopySection .gatsby-image-wrapper,
+       .img-fluid {
+            height: 50vh !important;
+        }
+
+    }
+    @media (min-width:991px) {
+        .image-and-copy-section__ImageAndCopySection .gatsby-image-wrapper{
+            max-height: 80vh;
+        }
     }
     .image-and-copy-section__ImageAndCopySection:nth-child(even) .gatsby-image-wrapper{
         grid-column: 1 / auto;

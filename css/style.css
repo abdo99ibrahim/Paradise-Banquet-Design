@@ -133,6 +133,24 @@ ul {
   section .content a:hover{
    opacity: 0.5;
   }
+  @media (max-width:767px) {
+    .image-and-copy-section__ImageAndCopySection .gatsby-image-wrapper
+    ,.img-fluid{
+    height: 110vh !important;
+    }
+}
+@media (min-width:768px) {
+    .image-and-copy-section__ImageAndCopySection .gatsby-image-wrapper,
+   .img-fluid {
+        height: 50vh !important;
+    }
+
+}
+@media (min-width:991px) {
+    .image-and-copy-section__ImageAndCopySection .gatsby-image-wrapper{
+        max-height: 80vh;
+    }
+}
 .footer{
   position: relative;
   background-color:rgb(13, 13, 13);;

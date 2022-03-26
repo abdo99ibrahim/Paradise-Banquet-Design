@@ -14,6 +14,17 @@
         width: 90%;
     }
 }
+@media screen and (min-width: 778px){
+    .historySection{
+        margin: 130px 30px;
+    }
+    .historySection img{
+        max-height: 60%;
+    }
+    .historySection .box{
+        padding: 120px 10px;
+    }
+}
 @media screen and (min-width: 992px){
 .historySection{
     margin: 120px 30px;
@@ -70,7 +81,17 @@
     text-transform: uppercase;
     color: rgb(51, 51, 51);
     margin-bottom: 10px;
+
+}
+@media screen and (min-width: 778px){
+    .historySection h1{
+        font-size: 35px;
+    }
+}
+@media screen and (min-width: 992px){
+    .historySection h1{
     font-size: 42px;
+    }
 }
 .historySection span{
     display: block;
