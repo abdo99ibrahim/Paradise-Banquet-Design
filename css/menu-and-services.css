@@ -22,19 +22,6 @@
     .image-and-copy-section__ImageAndCopySection:nth-child(odd){
         grid-template-columns: 45ch 1fr;
     }
-    .image-and-copy-section__ImageAndCopySection .gatsby-image-wrapper{
-        
-        grid-area: 1 / 1 / auto / auto;
-        object-fit: cover;
-        margin: 0px;
-        z-index: 2;
-        place-self: center;
-        width: -webkit-fill-available;
-        height: auto;
-        max-height: 80vh;
-        position: relative;
-        overflow: hidden;
-    }
     @media (max-width:767px) {
         .image-and-copy-section__ImageAndCopySection .gatsby-image-wrapper
         ,.img-fluid{
