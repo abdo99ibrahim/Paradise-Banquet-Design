@@ -1,3 +1,66 @@
+.sliderSection{
+    opacity: 1;
+    transform: translateY(0px);
+    transition-property: opacity, transform;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 200ms;
+    margin: 120px auto;
+    position: relative;
+}
+.sliderSection .typography__HeadingStyle{
+font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 1.125;
+    font-family: "Saol Display", "Times New Roman", Times, serif;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: rgb(51, 51, 51);
+    position: absolute;
+    padding-left: 15px;
+    top: -60px;
+    /* left: 100%; */
+}
+.slider {
+	overflow: hidden;
+	user-select: none;
+	cursor: grab;
+    width: 100%;
+}
+
+.slider:active {
+  cursor: grabbing;
+}
+
+.slider-wrapper {
+  display: flex;
+  overflow-x: scroll;
+  overflow: overlay;
+  user-select: none;
+  scroll-snap-type: x mandatory;
+  /* FIREFOX SCROLLBAR */
+  scrollbar-width: thin;
+  scrollbar-color: rgb(41, 41, 41) transparent;
+}
+
+.slider-wrapper::-webkit-scrollbar {
+  height: 100vh;
+}
+
+.slider-wrapper::-webkit-scrollbar-track, .slider-wrapper::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.slider-slide {
+  flex-shrink: 0;
+  width: 100%;
+  user-select: none;
+  scroll-snap-align: center;
+}
+
 .videoSection{
     opacity: 1;
     transform: translateY(0px);
@@ -30,7 +93,8 @@
 }
 @media screen and (min-width: 1200px){
     .videoSection video,
-    .videoSection h3{
+    .videoSection h3,
+    .sliderSection .slider{
         width: 1080px;
         display: flex !important;
         justify-content: flex-start;
@@ -40,7 +104,8 @@
 }
 @media screen and (max-width: 768px){
     .videoSection video,
-    .videoSection h3{
+    .videoSection h3,
+    .sliderSection .slider{
         width: 100%;
         justify-content: flex-start;
     }
