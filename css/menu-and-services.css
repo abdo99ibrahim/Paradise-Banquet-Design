@@ -22,6 +22,18 @@
     .image-and-copy-section__ImageAndCopySection:nth-child(odd){
         grid-template-columns: 45ch 1fr;
     }
+    .image-and-copy-section__ImageAndCopySection .gatsby-image-wrapper{
+        
+        grid-area: 1 / 1 / auto / auto;
+        object-fit: cover;
+        margin: 0px;
+        z-index: 2;
+        place-self: center;
+        width: 100%;
+        height: auto;
+        max-height: 100vh;
+        position: relative;
+    }
     @media (max-width:767px) {
         .image-and-copy-section__ImageAndCopySection .gatsby-image-wrapper
         ,.img-fluid{
@@ -37,7 +49,7 @@
     }
     @media (min-width:991px) {
         .image-and-copy-section__ImageAndCopySection .gatsby-image-wrapper{
-            max-height: 80vh;
+            max-height: 80vh !important;
         }
     }
     .image-and-copy-section__ImageAndCopySection:nth-child(even) .gatsby-image-wrapper{

@@ -1,74 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paradise Banquet Hall | Wedding Venue in Toronto</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/normalize.css">
 
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paradise Banquet Hall | Wedding Venue in Toronto</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    <main>
-        <section>
-            <img class="" src="./assets/images/0005-ParadiseOpenHouse_LittleBlueLemon.webp" alt="">
-            <div class="content w-50">
-                <h1>PARADISE
-                    <span>BANQUET HALL</span>
-                </h1>
-                <p class="lead">
-                    We have been perfecting the art of creating and hosting unique wedding receptions since 1976 for couples in Toronto and around the GTA.
-                </p>
-                <a href="./about.html">
-                    About Us
+    <!-- mobile navbar -->
+    <div class="big-mobile-nav hideClass mobile">
+        <div class="row">
+            <div class="col-6">
+                <a href="/" onclick="showbigFunc()">
+                    <h6>
+                        <img class="m-2 pt-3" src="./assets/Logo/paradise-logo.svg" alt="" />
+                    </h6>
                 </a>
             </div>
-        </section>        
-        <section>
-            <img class="" src="./assets/images/AdobeStock_47485081.webp" alt="">
-            <div class="content w-50">
-                <h1>EASTER BRUNCH
-                    <span>2022</span>
-                </h1>
-                <p class="lead">
-                    Enjoy an Easter to remember featuring cocktail and food stations, dessert, and open bars. DJ and lighting provided by Good Vibrations.
-                </p>
-                <a href="/easter-brunch-menu-2022.html">
-                    View Full Menu
+            <div class="col-6">
+                <a href="" onclick="showbigFunc()">
+                    <h4 class="text-secondary">
+                        <i class="fas fa-times m-3 pt-4"></i>
+                    </h4>
                 </a>
             </div>
-        </section>        
-        <section>
-            <img class="" src="./assets/images/chandelier-1664832.webp" alt="">
-            <div class="content w-50">
-                <h1>THE IDEAL
-                    <span>WEDDING BACKDROP</span>
-                </h1>
-                <p class="lead">
-                    From our six ballroom to our outdoor garden, we have the perfect venue to celebrate your “I do”.
-                </p>
-                <a href="/venues.html">
-                    Venues
+        </div>
+        <div class="col-12">
+            <ul class="navigation__PageLinks">
+                <li><a href="/about.html">
+                        <h2 class="typography__MenuSubheadingStyle"> <span>About Us</span></h2>
+                    </a></li>
+                <li><a href="/promotions.html">
+                        <h2 class="typography__MenuSubheadingStyle"> <span>Promotional Packages</span></h2>
+                    </a></li>
+                <li><a href="/venues.html">
+                        <h2 class="typography__MenuSubheadingStyle"> <span>Venues</span></h2>
+                    </a></li>
+                <li><a href="/menu-and-services.html">
+                        <h2 class="typography__MenuSubheadingStyle">Menu <span>&amp; Services</span></h2>
+                    </a></li>
+                <li><a href="/gallery.html">
+                        <h2 class="typography__MenuSubheadingStyle"> <span>Gallery</span></h2>
+                    </a></li>
+                <li><a aria-current="page" class="" href="/contact-us.html">
+                        <h2 class="typography__MenuSubheadingStyle"> <span>Contact Us</span></h2>
+                    </a></li>
+                <li>
+                    <div class="row col-3">
+                        <div class="col-6">
+                            <a href="https://www.facebook.com/paradisebanquethalls" target="_blank"
+                                rel="noopener noreferrer"><img src="./assets/Logo/facebook.svg" class="social_img"
+                                    alt=""></a>
+                        </div>
+                        <div class="col-6">
+                            <a href="https://instagram.com/paradisebanquethall/" target="_blank"
+                                rel="noopener noreferrer"><img src="./assets/Logo/instagram.svg" class="social_img"
+                                    alt=""></a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="small-mobile-nav showClass mobile">
+        <div class="row">
+            <div class="col-6">
+                <a href="/" onclick="showbigFunc()">
+                    <h6>
+                        <img class="m-2" src="./assets/Logo/paradise-logo.svg" alt="" />
+                    </h6>
                 </a>
             </div>
-        </section>        
-        <section>
-            <img class="" src="./assets/images/Stocksy_txp7f25cf15f9n200_Medium_1602137-50.webp" alt="">
-            <div class="content w-50">
-                <h1>DETAILED CUISINE
-                    <span>AND SERVICE</span>
-                </h1>
-                <p class="lead">
-                    For a one-of-kind experience, our team will work with you to deliver personalized care and quality cuisine.
-                </p>
-                <a href="/menu-and-services.html">
-                    Menu & Services
+            <div class="col-6">
+                <a href="#" onclick="showbigFunc()">
+                    <h4 class="text-secondary">
+                        <i class="fa-solid fa-bars m-3"></i>
+                    </h4>
                 </a>
             </div>
-        </section>
+        </div>
+    </div>
+    <main class="m-0">
+        <div class="d-flex">
+            <div class="w-15 big-nav hideClass normal">
+                <div class="row">
+                    <div class="col-6 p-5 d-flex flex-column">
+                        <a href="" onclick="showsmallFunc()">
+                            <h4 class="text-secondary text-center my-5">
+                                <i class="fas fa-times"></i>
+                            </h4>
+                        </a>
+                        <a href="" onclick="showbigFunc()">
+                            <h3 class="my-5">
+                                <img src="./assets/Logo/paradise-logo.svg" alt="" />
+                            </h3>
+                        </a>
+                        <div class="row" id="social">
+                            <a href="./contact-us.html" class="col-4">
+                                <h2 class=""><img src="assets/logo/contact-icon.svg" alt="" /></h2>
+                            </a>
+                            <a href="https://www.facebook.com/paradisebanquethalls" class="col-4" target="_blank"
+                                rel="noopener noreferrer">
+                                <h2 class="mt-1"><img src="assets/logo/facebook.svg" alt="" /></h2>
+                            </a>
+                            <a href="https://instagram.com/paradisebanquethall/" class="col-4" target="_blank"
+                                rel="noopener noreferrer">
+                                <h2 class="mt-1">
+                                    <img src="assets/logo/instagram.svg" alt="" />
+                                </h2>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <ul class="navigation__PageLinks">
+                            <li><a href="/about.html">
+                                    <h2 class="typography__MenuSubheadingStyle"> <span>About Us</span></h2>
+                                </a></li>
+                            <li><a href="/promotions.html">
+                                    <h2 class="typography__MenuSubheadingStyle"> <span>Promotional Packages</span></h2>
+                                </a></li>
+                            <li><a href="/venues.html">
+                                    <h2 class="typography__MenuSubheadingStyle"> <span>Venues</span></h2>
+                                </a></li>
+                            <li><a href="/venues/classic-ballroom.html">
+                                    <div class="navigation__VenueLink"><img
+                                            src="./assets/images/classic-ballroom-gem-recovered.svg"
+                                            alt="An illustration of a round gem with dashed lines on the inside showing the cuts not shown from the top-down angle.">
+                                        <h3 class="typography__RealWeddingsThirdHeadingStyle">Classic Ballroom</h3>
+                                    </div>
+                                </a></li>
+                            <li><a href="/venues/prince-room.html">
+                                    <div class="navigation__VenueLink"><img src="./assets/images/prince-gem.svg"
+                                            alt="An illustration of a round gem with dashed lines on the inside showing the cuts not shown from the top-down angle.">
+                                        <h3 class="typography__RealWeddingsThirdHeadingStyle">Prince</h3>
+                                    </div>
+                                </a></li>
+                            <li><a href="/venues/queen-anne.html">
+                                    <div class="navigation__VenueLink"><img src="./assets/images/queen-anne-gem.svg"
+                                            alt="An illustration of a round gem with dashed lines on the inside showing the cuts not shown from the top-down angle.">
+                                        <h3 class="typography__RealWeddingsThirdHeadingStyle">Queen Anne</h3>
+                                    </div>
+                                </a></li>
+                            <li><a href="/venues/queen-mary.html">
+                                    <div class="navigation__VenueLink"><img src="./assets/images/queen-mary-gem.svg"
+                                            alt="An illustration of a round gem with dashed lines on the inside showing the cuts not shown from the top-down angle.">
+                                        <h3 class="typography__RealWeddingsThirdHeadingStyle">Queen Mary</h3>
+                                    </div>
+                                </a></li>
+                            <li><a href="/venues/queen-victoria.html">
+                                    <div class="navigation__VenueLink"><img src="./assets/images/queen-victoria-gem.svg"
+                                            alt="An illustration of a round gem with dashed lines on the inside showing the cuts not shown from the top-down angle.">
+                                        <h3 class="typography__RealWeddingsThirdHeadingStyle">Queen Victoria</h3>
+                                    </div>
+                                </a></li>
+                            <li><a href="/venues/grand-queens.html">
+                                    <div class="navigation__VenueLink"><img src="./assets/images/grand-queens-gem.svg"
+                                            alt="An illustration of a round gem with dashed lines on the inside showing the cuts not shown from the top-down angle.">
+                                        <h3 class="typography__RealWeddingsThirdHeadingStyle">Grand Queens</h3>
+                                    </div>
+                                </a></li>
+                            <li><a href="/venues/garden.html">
+                                    <div class="navigation__VenueLink"><img src="./assets/images/garden-gem.svg"
+                                            alt="An illustration of a round gem with dashed lines on the inside showing the cuts not shown from the top-down angle.">
+                                        <h3 class="typography__RealWeddingsThirdHeadingStyle">Garden</h3>
+                                    </div>
+                                </a></li>
+                            <li><a href="/menu-and-services.html">
+                                    <h2 class="typography__MenuSubheadingStyle">Menu <span>&amp; Services</span></h2>
+                                </a></li>
+                            <li><a href="/gallery.html">
+                                    <h2 class="typography__MenuSubheadingStyle"> <span>Gallery</span></h2>
+                                </a></li>
+                            <li><a aria-current="page" class="" href="/contact-us.html">
+                                    <h2 class="typography__MenuSubheadingStyle"> <span>Contact Us</span></h2>
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="w-5 small-nav showClass normal">
+                <div class="p-2 d-flex flex-column">
+                    <a href="#" onclick="showbigFunc()">
+                        <h4 class="text-secondary text-center my-5">
+                            <i class="fa-solid fa-bars"></i>
+                        </h4>
+                    </a>
+                    <a href="#" onclick="showbigFunc()">
+                        <h3 class="my-5">
+                            <img src="./assets/Logo/p.svg" alt="" />
+                        </h3>
+                    </a>
+                    <a href="./contact-us.html">
+                        <h2 class="mt-5"><img src="assets/logo/contact-icon.svg" alt="" /></h2>
+                    </a>
+                    <a href="https://www.facebook.com/paradisebanquethalls" target="_blank" rel="noopener noreferrer">
+                        <h2 class="mt-1"><img src="assets/logo/facebook.svg" alt="" /></h2>
+                    </a>
+                    <a href="https://instagram.com/paradisebanquethall/" target="_blank" rel="noopener noreferrer">
+                        <h2 class="mt-1">
+                            <img src="assets/logo/instagram.svg" alt="" />
+                        </h2>
+                    </a>
+                </div>
+            </div>
+            <div class="w-95">
+                <section>
+                    <img class="" src="./assets/images/0005-ParadiseOpenHouse_LittleBlueLemon.webp" alt="" />
+                    <div class="content w-50">
+                        <h1>
+                            PARADISE
+                            <span>BANQUET HALL</span>
+                        </h1>
+                        <p class="lead">
+                            We have been perfecting the art of creating and hosting unique
+                            wedding receptions since 1976 for couples in Toronto and around
+                            the GTA.
+                        </p>
+                        <a href="./about.html"> About Us </a>
+                    </div>
+                </section>
+                <section>
+                    <img class="" src="./assets/images/AdobeStock_47485081.webp" alt="" />
+                    <div class="content w-50">
+                        <h1>
+                            EASTER BRUNCH
+                            <span>2022</span>
+                        </h1>
+                        <p class="lead">
+                            Enjoy an Easter to remember featuring cocktail and food
+                            stations, dessert, and open bars. DJ and lighting provided by
+                            Good Vibrations.
+                        </p>
+                        <a href="/easter-brunch-menu-2022.html"> View Full Menu </a>
+                    </div>
+                </section>
+                <section>
+                    <img class="" src="./assets/images/chandelier-1664832.webp" alt="" />
+                    <div class="content w-50">
+                        <h1>
+                            THE IDEAL
+                            <span>WEDDING BACKDROP</span>
+                        </h1>
+                        <p class="lead">
+                            From our six ballroom to our outdoor garden, we have the perfect
+                            venue to celebrate your “I do”.
+                        </p>
+                        <a href="/venues.html"> Venues </a>
+                    </div>
+                </section>
+                <section>
+                    <img class="" src="./assets/images/Stocksy_txp7f25cf15f9n200_Medium_1602137-50.webp" alt="" />
+                    <div class="content w-50">
+                        <h1>
+                            DETAILED CUISINE
+                            <span>AND SERVICE</span>
+                        </h1>
+                        <p class="lead">
+                            For a one-of-kind experience, our team will work with you to
+                            deliver personalized care and quality cuisine.
+                        </p>
+                        <a href="/menu-and-services.html"> Menu & Services </a>
+                    </div>
+                </section>
+            </div>
+        </div>
     </main>
     <footer class="footer">
         <div class="container">
@@ -138,6 +343,9 @@
         </div>
     </footer>
     <script src="./js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>
