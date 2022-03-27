@@ -97,8 +97,8 @@ height: auto;
 .image-and-copy-section__TextContent .image-and-copy-section__TitleAndGemRow img{
     width: -webkit-fill-available;
     height: -webkit-fill-available;
-    max-width: 80px;
-    max-height: 80px;
+    max-width: 60px;
+    max-height: 60px;
 }
 .venue-summary-grid__VenueSummaryGrid{
     width: 100%;

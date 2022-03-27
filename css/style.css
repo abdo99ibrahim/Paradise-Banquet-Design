@@ -337,17 +337,17 @@ ul {
     
 }
 }
-.w-15{
+/* .w-15{
   width: 15%;
-} 
+}  */
 .w-5{
-  width:6%
+  width:5%;
 }
 .h-5{
   max-height: 5%;
 }
 .w-95{
-  width: 94%;
+  width: 95%;
 }
 .hideClass{
   display:none;
@@ -355,32 +355,58 @@ ul {
 .showClass{
   display: block;
 }
-.small-nav, .big-nav{
+.small-nav{
   top:10px !important; 
   position:sticky !important;
   height: 100%;
   margin: 20px auto;
+  
+}
+.small-nav, .big-nav{
   z-index: 99;
   background: #fff;
 }
 h4 i{
-  margin-bottom: 100px;
+  margin-bottom: 30px;
 }
-.small-nav  h3  img:first-child{
-  width: 100px;
-  margin-bottom: 100px;
-  padding-left: 6px;
-
+.small-nav a h3 img:first-child{
+  width: 120px;
+  margin-bottom: 120px;
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  align-items: center;
+}
+@media only screen and (min-width:768px) and (max-width:991px){
+  .w-5{
+    width:8%;
+  }
+  .w-95{
+    width: 92%;
+  }
+  .small-nav a h3{
+    position: relative;
+    overflow: hidden;
+  }
+  .small-nav a h3 img:first-child{
+    margin-bottom: 400px;
+    width: 90px;
+  }
 }
 .paraLink{
   width: 50px;
 }
 
 .big-nav{
-  /* position:absolute !important; */
+  position:fixed;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  overflow-y: scroll;
+  max-height: 100%;
   /* left: 0 !important; */
   /* top: 0; */
-  width: 900px !important;
+  width: 600px !important;
   z-index: 100;
 }
 #social{

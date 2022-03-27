@@ -29,12 +29,15 @@ new WOW().init();
 function showbigFunc(){
     let navsmall=document.querySelector(".small-nav");
     let navbig=document.querySelector(".big-nav");
+    let section=document.querySelector(".w-95");
     let navMobileSmall=document.querySelector(".small-mobile-nav");
     let navMobileBig=document.querySelector(".big-mobile-nav");
     navsmall.classList.add("hideClass");
     navsmall.classList.remove("showClass");
+    section.classList.remove("w-95");
     navbig.classList.add("showClass");
     navbig.classList.remove("hideClass");
+    section.classList.add("w-100");
 // Mobile
     navMobileSmall.classList.add("hideClass");
     navMobileSmall.classList.remove("showClass");
