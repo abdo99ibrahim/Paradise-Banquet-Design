@@ -71,7 +71,6 @@ ul {
     position: absolute;
     border-radius: 2px;
     background-color: #fff;
-    width: 700px !important;
     bottom: 0;
     padding: 40px;
     width: calc(40ch + 62px);
