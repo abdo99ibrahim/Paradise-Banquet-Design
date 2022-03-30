@@ -64,7 +64,8 @@ ul {
   }
   @media (max-width:767px) {
     section img{
-      height: 700px;
+      height: 600px;
+      margin-bottom: 120px;
     }
   }
   section .content{
@@ -78,8 +79,9 @@ ul {
   }
   @media (max-width:767px) {
     section .content{
-      width: fit-content !important;
+      width:95% !important;
       padding: 20px;
+      padding-bottom: 40px;
     }
   }
   section:nth-child(even) .content{
