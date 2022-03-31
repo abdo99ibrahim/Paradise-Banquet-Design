@@ -35,6 +35,7 @@
         z-index: 1;
         display: grid;
         row-gap: 10px;
+        position:absolute;
     }
     .header__TitleAndGemRow{
         width: 100%;
