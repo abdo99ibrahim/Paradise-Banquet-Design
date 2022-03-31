@@ -26,18 +26,25 @@ a.onclick = function(){
 };
 new WOW().init();
 
+let navsmall=document.querySelector(".small-nav");
+let navbig=document.querySelector(".big-nav");
+
+let section=document.querySelector(".w-95");
+
+let navMobileSmall=document.querySelector(".small-mobile-nav");
+let navMobileBig=document.querySelector(".big-mobile-nav");
+
 function showbigFunc(){
-    let navsmall=document.querySelector(".small-nav");
-    let navbig=document.querySelector(".big-nav");
-    let section=document.querySelector(".w-95");
-    let navMobileSmall=document.querySelector(".small-mobile-nav");
-    let navMobileBig=document.querySelector(".big-mobile-nav");
+   
+
+    section.classList.remove("w-95");
+    section.classList.add("w-100");
+
     navsmall.classList.add("hideClass");
     navsmall.classList.remove("showClass");
-    section.classList.remove("w-95");
+    
     navbig.classList.add("showClass");
     navbig.classList.remove("hideClass");
-    section.classList.add("w-100");
 // Mobile
     navMobileSmall.classList.add("hideClass");
     navMobileSmall.classList.remove("showClass");
@@ -46,5 +53,21 @@ function showbigFunc(){
     navMobileBig.classList.remove("hideClass");
     
 }
-// let nav=document.querySelector("#small-nav");
-nav.className="big-nav";
+
+function hide(){
+
+    section.classList.add("w-95");
+    section.classList.remove("w-100");
+
+    navsmall.classList.remove("hideClass");
+    navsmall.classList.add("showClass");
+    
+    navbig.classList.remove("showClass");
+    navbig.classList.add("hideClass");
+
+    navMobileSmall.classList.remove("hideClass");
+    navMobileSmall.classList.add("showClass");
+    
+    navMobileBig.classList.remove("showClass");
+    navMobileBig.classList.add("hideClass");
+}
