@@ -216,6 +216,7 @@ ul {
 .footer .mobile{
   display: none;
 }
+
 @media (max-width:991px)
 {
   .footer [class^=col-]
@@ -297,7 +298,7 @@ ul {
     font-style: italic;
     font-variant: normal;
     font-weight: 400;
-    font-size: 19px;
+    font-size: 18px;
     line-height: 1.25;
     font-family: "Saol Text", "Times New Roman", Times, serif;
     letter-spacing: 0.04em;
@@ -346,6 +347,11 @@ ul {
     grid-column: 4 / span 3;
     display: grid;
     
+}
+p.hours-time{
+  width: 150%;
+  position: relative;
+  left: -20px;
 }
 }
 /* .w-15{

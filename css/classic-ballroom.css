@@ -1,0 +1,56 @@
+@media (max-width:767px) {
+    section{
+        margin-bottom: 150px;
+    }
+    section .content{
+        position:absolute;
+        border-radius: 2px;
+        background-color: #fff;
+        bottom: -120px;
+        padding: 40px;
+        width: calc(40ch + 62px);
+        padding: 10px 25px 25px !important;
+      }
+      .venue-summary-grid__VenueSummaryGrid > div:first-of-type{
+        padding-left: 20px;
+      }
+      .venue-summary-grid__VenueSummaryGrid div:last-of-type p {
+          margin-left: 0;
+          width: 110%;
+      }
+      .image-and-copy-section__TextContent .image-and-copy-section__TitleAndGemRow {
+          margin-bottom: -30px;
+      }
+       .image-and-copy-section__TitleAndGemRow img {
+           position: relative;
+           top: 30%;
+      }
+    .header__TextContent{
+        place-self: end;
+        background-color: white;
+        margin-left: 15px;
+        margin-right: 0px;
+        padding: 24px 25px 45px;
+        min-height: 150px;
+        z-index: 1;
+        display: grid;
+        row-gap: 10px;
+    }
+    .header__TitleAndGemRow{
+        width: 100%;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    justify-content: space-between !important;
+    -webkit-box-align: center !important;
+    align-items: center !important;
+    }
+    .typography__HeadingStyle{
+        font-size: 35px !important;
+        line-height: 1.125;
+        font-family: "Saol Display", "Times New Roman", Times, serif;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: rgb(51, 51, 51);
+    }
+}

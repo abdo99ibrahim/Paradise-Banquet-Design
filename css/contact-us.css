@@ -26,7 +26,14 @@ outline: none;
     color: rgb(51, 51, 51);
     outline: none;
 }
-
+@media (max-width: 767px){
+section img {
+    margin-bottom: 0px
+}
+.typography__CopyStyle{
+    font-size: 14px !important;
+}
+}
 input, textarea{
     width: 100%;
     border-top: none !important;
