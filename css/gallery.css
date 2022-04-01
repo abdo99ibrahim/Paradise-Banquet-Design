@@ -26,7 +26,7 @@ font-style: normal;
 .slider {
 	overflow: hidden;
 	user-select: none;
-	cursor: grab;
+	/* cursor: grab; */
     width: 100%;
 }
 
@@ -40,7 +40,6 @@ font-style: normal;
   overflow: overlay;
   user-select: none;
   scroll-snap-type: x mandatory;
-  /* FIREFOX SCROLLBAR */
   scrollbar-width: thin;
   scrollbar-color: rgb(41, 41, 41) transparent;
 }
@@ -181,3 +180,42 @@ margin: 120px 30px 60px;
 .quote__QuoteSection svg:last-child{
     transform: translateY(50%);
 }
+.owl-carousel {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    /* object-fit: cover; */
+    object-position: center center;
+    opacity: 1;
+    transition: opacity 500ms ease 0s;
+}
+.owl-carousel img{
+    height: 800px !important;
+    display: block;
+
+}
+.owl-item {
+    text-align: center;
+    padding: 100px 0;
+  }
+  
+  .owl-prev,
+  .owl-next 
+  {display: block;
+      font-size: 30px !important;
+    z-index: 66;
+    margin:10px;
+    /* position: absolute; */
+    bottom: 0;
+  }
+  .slider-counter {
+      position: relative;
+      right: 23%;
+      top: 100%;
+    text-align: right;
+  }
+  
+  .info {
+    text-align: center;
+    margin-top: 110px;
+  }

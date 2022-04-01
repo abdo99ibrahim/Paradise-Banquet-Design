@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
   integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
   crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/owl.carousel.min.css">
 </head>
 
 <body>
@@ -75,14 +76,14 @@
   <div class="small-mobile-nav showClass mobile">
     <div class="row">
       <div class="col-6">
-        <a onclick="showbigFunc()">
+        <a href="/" onclick="showbigFunc()">
           <h6>
             <img class="m-2" src="./assets/Logo/paradise-logo.svg" alt="" />
           </h6>
         </a>
       </div>
       <div class="col-6">
-        <a onclick="showbigFunc()">
+        <a href="#" onclick="showbigFunc()">
           <h4 class="text-secondary">
             <i class="fa-solid fa-bars m-3"></i>
           </h4>
@@ -95,7 +96,7 @@
       <div class="w-15 big-nav hideClass normal">
         <div class="row">
           <div class="col-6 p-5 d-flex flex-column">
-            <a href="" onclick="showbigFunc()">
+            <a onclick="hide()">
               <h4 class="text-secondary text-center my-5">
                 <i class="fas fa-times"></i>
               </h4>
@@ -189,12 +190,12 @@
       </div>
       <div class="w-5 small-nav showClass normal">
         <div class="p-2 d-flex flex-column">
-          <a onclick="showbigFunc()">
+          <a href="#" onclick="showbigFunc()">
             <h4 class="text-secondary text-center my-5">
               <i class="fa-solid fa-bars"></i>
             </h4>
           </a>
-          <a onclick="showbigFunc()">
+          <a href="#" onclick="showbigFunc()">
             <h3 class="my-5">
               <img src="./assets/Logo/p.svg" alt="" />
             </h3>
@@ -230,7 +231,7 @@
           </div>
         </section>
         <div class="sliderSection wow fadeInUpBig" data-wow-duration="1.2s">
-          <div class="slider">
+          <!-- <div class="slider">
             <h1 class="typography__HeadingStyle">Venues</h1>
             <div class="slider-wrapper">
               <img class="slider-slide" src="./assets/images/4930.webp" alt="">
@@ -244,7 +245,15 @@
               
             </div>
             
+          </div> -->
+          <div class="slider owl-carousel">
+            <div> <img src="./assets/images/0005-ParadiseOpenHouse_LittleBlueLemon.webp" class="img-fluid"> </div>
+            <div> <img src="./assets/images/0009-ParadiseOpenHouse_LittleBlueLemon.webp" class="img-fluid"> </div>
+            <div> <img src="./assets/images/0010-ParadiseOpenHouse_LittleBlueLemon.webp" class="img-fluid"> </div>
+            <div> <img src="./assets/images/0013-ParadiseOpenHouse_LittleBlueLemon.webp" class="img-fluid"> </div>
+            <div> <img src="./assets/images/0056-ParadiseOpenHouse_LittleBlueLemon.webp" class="img-fluid"> </div>
           </div>
+          <div class="slider-counter"></div
         </div>
         <section class="videoSection wow fadeInUpBig" data-wow-duration="1.2s">
           <video controls="" poster="./assets/images/image-asset__1_.png" __idm_id__="5816321">
@@ -365,6 +374,8 @@
     </div>
   </footer>
   <script src="../js/wow.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="./js/owl.carousel.js"></script>
   <script src="./js/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
