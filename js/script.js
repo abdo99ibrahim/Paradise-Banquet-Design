@@ -77,7 +77,7 @@ $('.slider').on('initialized.owl.carousel changed.owl.carousel', function(e) {
       return;
     }
     var carousel = e.relatedTarget;
-    $('.slider-counter').text(carousel.relative(carousel.current()) + 1 + '/' + carousel.items().length);
+    $('.slider-counter').text(carousel.relative(carousel.current()) + 1 + ' ________ ' + carousel.items().length);
   }).owlCarousel({
     items: 1,
     loop:true,
