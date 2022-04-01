@@ -413,7 +413,6 @@ h4 i{
 .paraLink{
   width: 50px;
 }
-
 .big-nav{
   position:fixed;
   top: 0px;
@@ -423,8 +422,19 @@ h4 i{
   max-height: 100%;
   /* left: 0 !important; */
   /* top: 0; */
-  width: 600px !important;
+  /* width: 600px !important; */
   z-index: 100;
+  animation: forwards;
+  animation-name: run;
+  animation-duration: 1s;
+}
+@keyframes run {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 600px;    
+  }
 }
 #social{
   margin-top: 250px;
@@ -434,6 +444,7 @@ h4 i{
   align-self: center;
   display: grid;
   row-gap: 15px;
+  margin-bottom: 13rem;
 }
 .navigation__PageLinks_x{
   margin-top: 50px;
@@ -514,13 +525,24 @@ a{
     width:140px; position:static
   }
   .big-mobile-nav{
-    top: 0;
+    top: 0px;
     width: 100%;
-    position:sticky;
     z-index: 100;
+    position: fixed;
+    overflow-x: scroll;
     background: #fff;
-    height: 800px !important;
+    animation-name: down;
+    animation-duration: 2.5s;
   }
+  @keyframes down {
+    0% {
+      max-height: 0;
+    }
+    100% {
+      max-height: 800px;   
+    }
+  }
+
   .typography__MenuSubheadingStyle{
     font-size: 32px;
   }
